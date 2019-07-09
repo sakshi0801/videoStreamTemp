@@ -1,0 +1,8 @@
+<div *ngIf="videos" >
+    <ul>
+        <li *ngFor="let video of videos">
+          {{ video.title }}
+          <img src="/assets/{{video.poster}}">
+        </li>
+  </ul>
+</div>

@@ -1,0 +1,9 @@
+<!-- <p *ngFor="let v of videos1">
+{{v.title}}
+</p> -->
+<h3>Videos</h3>
+<app-all-data></app-all-data>
+
+<h4>Video</h4>
+<app-videojs [url]="url"  [obj]="video" [poster]="poster"></app-videojs>
+<router-outlet></router-outlet>

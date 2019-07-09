@@ -1,0 +1,24 @@
+<div *ngIf="obj">
+  <!-- <img src="obj.poster"> -->
+  <p>Title :  {{obj.title}}</p>
+  <p>description : {{obj.description}}</p>
+  <img [src]="poster"/>
+</div>
+
+<video
+        *ngIf="url"
+        id="video"
+        class="video-js vjs-default-skin vjs-big-play-centered"
+        autoplay
+        controls
+        preload="none"
+        width="700"
+        height="500"
+        poster=""
+        data-setup='{"techOrder": ["flash", "html5"],
+      "nativeControlsForTouch": true, "controlBar": { "muteToggle": true,
+      "volumeControl": true, "timeDivider": false, "durationDisplay": false, "progressControl": true } }'
+      >
+    <source [src]="url" type="rtmp/mp4">
+     <!-- <source src="rtmp://localhost:1935/vod/mp4:Tom.mp4" type="rtmp/mp4"> -->
+</video>
